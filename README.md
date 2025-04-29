@@ -14,17 +14,36 @@ Aplicación Java que determina si dos palabras son anagramas (mismas letras en d
 - 📊 Integración con SonarQube
 - 💻 Interfaz de línea de comandos interactiva
 
-## 📦 Estructura del Proyecto
+## 📂 Estructura del Proyecto
 
-src/
-├── main/
-│ └── java/org/example/
-│ ├── service/AnagramaChecker.java # Interfaz
-│ └── service/impl/AnagramaCheckerImpl.java # Implementación
-└── test/
-└── java/service/AnagramaCheckerTest.java # Pruebas
+```text
+proyecto-anagramas/
+├── src/
+│   ├── main/
+│   │   └── java/org/example/
+│   │       ├── service/
+│   │       │   ├── AnagramaChecker.java       ← Interfaz principal
+│   │       │   └── impl/
+│   │       │       └── AnagramaCheckerImpl.java ← Implementación
+│   │       └── Main.java                     ← Clase ejecutable
+│   └── test/
+│       └── java/
+│           └── service/
+│               └── AnagramaCheckerTest.java   ← Pruebas unitarias
+├── pom.xml                                  ← Configuración Maven
+└── README.md                                ← Este archivo
+```text
 
 ## EJEMPLO 
+
+$ mvn exec:java -Dexec.mainClass="org.example.Main"
+
+🔍 VERIFICADOR DE ANAGRAMAS 🔍
+──────────────────────────────
 Ingrese primera palabra: congreso
 Ingrese segunda palabra: sogrecon
-¡Son anagramas! ✅
+
+¡Resultado! 🎉
+"congreso" y "sogrecon" → SON ANAGRAMAS ✅
+──────────────────────────────
+Tiempo de ejecución: 2 ms
