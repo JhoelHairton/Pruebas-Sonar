@@ -34,16 +34,13 @@ proyecto-anagramas/
 └── README.md                                ← Este archivo
 
 ```
-## EJEMPLO
+# 🔍 Verificador de Anagramas
 
-$ mvn exec:java -Dexec.mainClass="org.example.Main"
+Una sencilla aplicación Java que verifica si dos palabras ingresadas por el usuario son **anagramas**.
 
-🔍 VERIFICADOR DE ANAGRAMAS 🔍
-──────────────────────────────
-Ingrese primera palabra: congreso
-Ingrese segunda palabra: sogrecon
+## 🚀 Ejecución
 
-¡Resultado! 🎉
-"congreso" y "sogrecon" → SON ANAGRAMAS ✅
-──────────────────────────────
-Tiempo de ejecución: 2 ms
+Para ejecutar la aplicación usando Maven:
+
+```bash
+mvn exec:java -Dexec.mainClass="org.example.Main"
