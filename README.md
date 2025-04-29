@@ -34,13 +34,3 @@ proyecto-anagramas/
 └── README.md                                ← Este archivo
 
 ```
-# 🔍 Verificador de Anagramas
-
-Una sencilla aplicación Java que verifica si dos palabras ingresadas por el usuario son **anagramas**.
-
-## 🚀 Ejecución
-
-Para ejecutar la aplicación usando Maven:
-
-```bash
-mvn exec:java -Dexec.mainClass="org.example.Main"
