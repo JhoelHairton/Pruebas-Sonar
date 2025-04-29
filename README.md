@@ -32,9 +32,9 @@ proyecto-anagramas/
 │               └── AnagramaCheckerTest.java   ← Pruebas unitarias
 ├── pom.xml                                  ← Configuración Maven
 └── README.md                                ← Este archivo
-```text
 
-## EJEMPLO 
+```
+## EJEMPLO
 
 $ mvn exec:java -Dexec.mainClass="org.example.Main"
 
